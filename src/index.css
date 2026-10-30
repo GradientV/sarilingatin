@@ -1,0 +1,202 @@
+@import 'tailwindcss';
+
+/*
+ * Sariling Atin design tokens.
+ * The palette comes from the store itself: the deep red of the walls and awning,
+ * the gold of the awning letters, coconut-cream paper, charcoal from the grill,
+ * sampaguita-leaf green (their catering menu's flower), and a sea blue for padala.
+ * Tagalog names on purpose: pula = red, dilaw = yellow, gata = coconut milk,
+ * uling = charcoal, dahon = leaf, dagat = sea.
+ */
+@theme {
+    --font-display: 'Fraunces Variable', 'Georgia', 'Times New Roman', serif;
+    --font-sans: 'Figtree Variable', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+    --font-sign: 'Bungee', 'Arial Black', 'Impact', sans-serif;
+
+    --color-gata-50: #fffcf6;
+    --color-gata-100: #fff7e8;
+    --color-gata-200: #f8ecd6;
+    --color-gata-300: #efdcb9;
+    --color-gata-400: #e2c690;
+
+    --color-pula-50: #fdf1ef;
+    --color-pula-100: #fadcd7;
+    --color-pula-200: #f3b3a9;
+    --color-pula-500: #d3291f;
+    --color-pula-600: #b3191c;
+    --color-pula-700: #8e1216;
+    --color-pula-800: #6c0f12;
+    --color-pula-900: #4a0b0d;
+
+    --color-dilaw-100: #fff4cc;
+    --color-dilaw-200: #ffe9a3;
+    --color-dilaw-300: #ffd95e;
+    --color-dilaw-400: #fcc419;
+    --color-dilaw-500: #eaa800;
+    --color-dilaw-600: #b98200;
+
+    --color-uling-950: #140e0b;
+    --color-uling-900: #211714;
+    --color-uling-800: #33251f;
+    --color-uling-700: #4a3830;
+    --color-uling-600: #6b5850;
+    --color-uling-500: #8a776e;
+    --color-uling-300: #c9bbb2;
+
+    --color-dahon-50: #eef6ee;
+    --color-dahon-100: #d8ebd9;
+    --color-dahon-500: #3d8a4f;
+    --color-dahon-600: #2f6f3e;
+    --color-dahon-700: #245632;
+
+    --color-dagat-50: #eef3fd;
+    --color-dagat-100: #d9e4fa;
+    --color-dagat-300: #8fb0ee;
+    --color-dagat-600: #1f4fb4;
+    --color-dagat-700: #1b3f8f;
+    --color-dagat-800: #16326f;
+    --color-dagat-900: #0f2350;
+
+    --shadow-sign: 3px 3px 0 0 var(--color-uling-900);
+    --shadow-sign-lg: 6px 6px 0 0 var(--color-uling-900);
+
+    --animate-marquee: marquee 38s linear infinite;
+    --animate-sway: sway 5s ease-in-out infinite;
+
+    @keyframes marquee {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-50%);
+        }
+    }
+
+    @keyframes sway {
+        0%,
+        100% {
+            transform: rotate(-3deg);
+        }
+        50% {
+            transform: rotate(3deg);
+        }
+    }
+}
+
+@layer base {
+    html {
+        -webkit-text-size-adjust: 100%;
+        scroll-padding-top: 6.5rem;
+    }
+
+    body {
+        @apply bg-gata-100 font-sans text-uling-900 antialiased;
+        text-rendering: optimizeLegibility;
+    }
+
+    ::selection {
+        @apply bg-dilaw-300 text-uling-900;
+    }
+
+    :focus-visible {
+        outline: 3px solid var(--color-dagat-600);
+        outline-offset: 3px;
+        border-radius: 4px;
+    }
+
+    h1,
+    h2,
+    h3 {
+        text-wrap: balance;
+    }
+
+    p {
+        text-wrap: pretty;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+            animation-duration: 0.01ms !important;
+            animation-iteration-count: 1 !important;
+            transition-duration: 0.01ms !important;
+            scroll-behavior: auto !important;
+        }
+    }
+}
+
+/* the big headline voice: Fraunces with its SOFT axis turned all the way up,
+   which rounds the serifs into the chunky, friendly shapes of a painted sign */
+@utility font-display-soft {
+    font-family: var(--font-display);
+    font-variation-settings: 'SOFT' 100;
+}
+
+/* banig: the woven sleeping mat. two sets of diagonal strips crossing each other.
+   it's a mask, so the weave takes whatever text color the element has:
+   <div class="banig text-pula-700/30" /> */
+@utility banig {
+    background-color: currentColor;
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpath d='M0 0h12v3H0zM0 4h12v3H0zM0 8h12v3H0zM12 12h12v3H12zM12 16h12v3H12zM12 20h12v3H12z'/%3E%3Cpath fill-opacity='.55' d='M12 0h3v12h-3zM16 0h3v12h-3zM20 0h3v12h-3zM0 12h3v12H0zM4 12h3v12H4zM8 12h3v12H8z'/%3E%3C/svg%3E");
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpath d='M0 0h12v3H0zM0 4h12v3H0zM0 8h12v3H0zM12 12h12v3H12zM12 16h12v3H12zM12 20h12v3H12z'/%3E%3Cpath fill-opacity='.55' d='M12 0h3v12h-3zM16 0h3v12h-3zM20 0h3v12h-3zM0 12h3v12H0zM4 12h3v12H4zM8 12h3v12H8z'/%3E%3C/svg%3E");
+    -webkit-mask-size: 24px 24px;
+    mask-size: 24px 24px;
+}
+
+/* capiz: the pearly shell windowpanes of old Filipino houses (bahay na bato).
+   a grid of soft squares with a thin wooden lattice between them */
+@utility capiz {
+    background-color: var(--color-gata-50);
+    background-image:
+        linear-gradient(90deg, rgb(122 86 52 / 0.28) 2px, transparent 2px),
+        linear-gradient(rgb(122 86 52 / 0.28) 2px, transparent 2px),
+        radial-gradient(circle at 35% 30%, rgb(255 255 255 / 0.95), rgb(246 234 214 / 0.55) 60%, rgb(232 214 186 / 0.6));
+    background-size:
+        34px 34px,
+        34px 34px,
+        34px 34px;
+}
+
+/* the jeepney signboard look: thick ink border with a hard offset shadow */
+@utility sign-frame {
+    border: 2px solid var(--color-uling-900);
+    box-shadow: var(--shadow-sign);
+}
+
+/* rows of the price list get a dotted leader between the dish and the price */
+@utility leader {
+    background-image: radial-gradient(circle, var(--color-uling-500) 1px, transparent 1.5px);
+    background-size: 8px 4px;
+    background-repeat: repeat-x;
+    background-position: 0 70%;
+}
+
+/* hides the scrollbar on horizontally scrolling chip rows, keeps them scrollable */
+@utility no-scrollbar {
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+@layer components {
+    .prose-legal {
+        @apply max-w-3xl text-[1.0625rem] leading-relaxed text-uling-800;
+    }
+    .prose-legal h2 {
+        @apply mt-10 mb-3 font-display-soft text-2xl font-bold text-uling-900;
+    }
+    .prose-legal h3 {
+        @apply mt-6 mb-2 text-lg font-bold text-uling-900;
+    }
+    .prose-legal p {
+        @apply mb-4;
+    }
+    .prose-legal ul {
+        @apply mb-4 list-disc space-y-1.5 pl-6 marker:text-pula-600;
+    }
+    .prose-legal a {
+        @apply font-semibold text-pula-700 underline decoration-pula-200 decoration-2 underline-offset-2 hover:decoration-pula-600;
+    }
+}

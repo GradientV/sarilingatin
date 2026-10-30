@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#b3191c"/>
+  <g transform="translate(4 5) scale(.875)">
+    <path d="M31 37c-11-3-21 2-26 17 12 2 22-3 26-17Z" fill="#3d8a4f"/>
+    <path d="M33 37c11-3 21 2 26 17-12 2-22-3-26-17Z" fill="#58a86a"/>
+    <g fill="#fffdf7" stroke="#e8d6b0" stroke-width=".9">
+      <ellipse cx="32" cy="14.5" rx="6.6" ry="10.5" transform="rotate(0 32 26)"/>
+      <ellipse cx="32" cy="14.5" rx="6.6" ry="10.5" transform="rotate(72 32 26)"/>
+      <ellipse cx="32" cy="14.5" rx="6.6" ry="10.5" transform="rotate(144 32 26)"/>
+      <ellipse cx="32" cy="14.5" rx="6.6" ry="10.5" transform="rotate(216 32 26)"/>
+      <ellipse cx="32" cy="14.5" rx="6.6" ry="10.5" transform="rotate(288 32 26)"/>
+    </g>
+    <g fill="#ffffff" stroke="#efe2c4" stroke-width=".7">
+      <ellipse cx="32" cy="19" rx="4.4" ry="7" transform="rotate(36 32 26)"/>
+      <ellipse cx="32" cy="19" rx="4.4" ry="7" transform="rotate(108 32 26)"/>
+      <ellipse cx="32" cy="19" rx="4.4" ry="7" transform="rotate(180 32 26)"/>
+      <ellipse cx="32" cy="19" rx="4.4" ry="7" transform="rotate(252 32 26)"/>
+      <ellipse cx="32" cy="19" rx="4.4" ry="7" transform="rotate(324 32 26)"/>
+    </g>
+    <circle cx="32" cy="26" r="3.4" fill="#fcc419"/>
+  </g>
+</svg>
