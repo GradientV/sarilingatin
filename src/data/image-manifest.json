@@ -1,0 +1,170 @@
+{
+    "/images/counter/must-try.webp": {
+        "w": 1600,
+        "h": 954,
+        "sm": {
+            "w": 720,
+            "h": 429
+        }
+    },
+    "/images/counter/steam-table-bbq.webp": {
+        "w": 1600,
+        "h": 1200,
+        "sm": {
+            "w": 720,
+            "h": 540
+        }
+    },
+    "/images/counter/steam-table-closeup.webp": {
+        "w": 1600,
+        "h": 1020,
+        "sm": {
+            "w": 720,
+            "h": 459
+        }
+    },
+    "/images/counter/steam-table.webp": {
+        "w": 1600,
+        "h": 1200,
+        "sm": {
+            "w": 720,
+            "h": 540
+        }
+    },
+    "/images/food/crispy-pancit.webp": {
+        "w": 1200,
+        "h": 1600,
+        "sm": {
+            "w": 720,
+            "h": 960
+        }
+    },
+    "/images/food/grilled-squid.webp": {
+        "w": 1200,
+        "h": 1600,
+        "sm": {
+            "w": 720,
+            "h": 960
+        }
+    },
+    "/images/food/handaan-spread.webp": {
+        "w": 1024,
+        "h": 683,
+        "sm": {
+            "w": 720,
+            "h": 480
+        }
+    },
+    "/images/food/lechon-belly-rolls.webp": {
+        "w": 1535,
+        "h": 1600,
+        "sm": {
+            "w": 720,
+            "h": 750
+        }
+    },
+    "/images/food/lechon-belly-slice.webp": {
+        "w": 1600,
+        "h": 1200,
+        "sm": {
+            "w": 720,
+            "h": 540
+        }
+    },
+    "/images/food/lechon-whole.webp": {
+        "w": 1200,
+        "h": 1600,
+        "sm": {
+            "w": 720,
+            "h": 960
+        }
+    },
+    "/images/food/noodle-soup.webp": {
+        "w": 1516,
+        "h": 1600,
+        "sm": {
+            "w": 720,
+            "h": 760
+        }
+    },
+    "/images/food/pork-bbq-grill.webp": {
+        "w": 1600,
+        "h": 1134,
+        "sm": {
+            "w": 720,
+            "h": 510
+        }
+    },
+    "/images/food/taho.webp": {
+        "w": 1229,
+        "h": 1600,
+        "sm": {
+            "w": 720,
+            "h": 937
+        }
+    },
+    "/images/store/dried-fish.webp": {
+        "w": 1200,
+        "h": 1600,
+        "sm": {
+            "w": 720,
+            "h": 960
+        }
+    },
+    "/images/store/elmhurst-counter.webp": {
+        "w": 1493,
+        "h": 1600,
+        "sm": {
+            "w": 720,
+            "h": 772
+        }
+    },
+    "/images/store/grocery-fridge.webp": {
+        "w": 1200,
+        "h": 1600,
+        "sm": {
+            "w": 720,
+            "h": 960
+        }
+    },
+    "/images/store/grocery-sauces.webp": {
+        "w": 1200,
+        "h": 1600,
+        "sm": {
+            "w": 720,
+            "h": 960
+        }
+    },
+    "/images/store/grocery-snacks.webp": {
+        "w": 1200,
+        "h": 1600,
+        "sm": {
+            "w": 720,
+            "h": 960
+        }
+    },
+    "/images/store/holiday-dining.webp": {
+        "w": 900,
+        "h": 1600,
+        "sm": {
+            "w": 540,
+            "h": 960
+        }
+    },
+    "/images/store/tenth-anniversary.webp": {
+        "w": 1200,
+        "h": 1600,
+        "sm": {
+            "w": 720,
+            "h": 960
+        }
+    },
+    "/images/store/woodside-storefront.webp": {
+        "w": 1200,
+        "h": 1600,
+        "sm": {
+            "w": 720,
+            "h": 960
+        }
+    }
+}

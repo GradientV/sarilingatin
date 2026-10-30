@@ -1,0 +1,14 @@
+{
+    "name": "Sariling Atin: Filipino Grill & Grocery",
+    "short_name": "Sariling Atin",
+    "description": "Filipino grill and grocery at 89-12 Queens Blvd, Elmhurst, Queens.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#fff7e8",
+    "theme_color": "#b3191c",
+    "icons": [
+        { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+        { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" },
+        { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+    ]
+}
