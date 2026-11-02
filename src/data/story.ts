@@ -1,5 +1,5 @@
 // the family's story, press coverage and sister stores.
-// every line here is sourced in RESEARCH.md. the client should read this page
+// every line here is sourced. the client should read this page
 // before launch: it's their family, and they get the final word on what's shared.
 import type { PhotoKey } from './photos';
 

@@ -67,7 +67,7 @@ To add one:
 2. Run `npm run images`. It writes `<name>.webp` (up to 1600 px) and `<name>-sm.webp` (up to 720 px for phones), moves the original into `images-raw/` (git-ignored, nothing is deleted), and updates `src/data/image-manifest.json` so every image gets the right width and height.
 3. Add it to `src/data/photos.ts` with alt text, then use it: `<Photo photo="yourKey" sizes="…" />`, or give a dish `photo: 'yourKey'` in `menu.ts`.
 
-Dishes without a photo show a painted name tile instead. Good next photos to get from the client: sisig, kare-kare, Bicol express, dinuguan, and the Elmhurst storefront.
+Dishes without a photo show a painted name tile instead.
 
 `npm run images -- --rebuild` re-exports every original in `images-raw/` (after changing sizes or quality in the script).
 
@@ -85,12 +85,6 @@ There's no backend and no form. Visitors add trays, the party set or a lechon to
 ## Deploying (Vercel)
 
 Import the repo; `vercel.json` sets the build command (`npm run build`), output (`dist`), clean URLs, redirects, security headers (including a Content-Security-Policy that allows the Google Maps embed) and caching. Analytics: turn on Vercel Web Analytics in the project; the script is already in `index.html` (it 404s on localhost, which is expected).
-
-### Before launch
-
-- [ ] Buy the domain and set `SITE_URL` in `src/data/site.ts`, then rebuild.
-- [ ] Walk the client through the open questions in `RESEARCH.md` (hours, prices, other stores, padala partners, the family story).
-- [ ] Add the website to their Google Business Profile and Facebook page.
 
 ## Credits
 

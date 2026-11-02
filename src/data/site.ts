@@ -1,7 +1,5 @@
 // everything about the store that shows up in more than one place:
 // name, address, phone, hours, links. change it here and every page follows.
-//
-// sources for each fact are in RESEARCH.md at the project root.
 
 /**
  * the address the site will live at. used for canonical links, the sitemap,
